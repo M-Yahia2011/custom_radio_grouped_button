@@ -206,8 +206,6 @@ class CustomRadioButtonState<T> extends State<CustomRadioButton<T>> {
               child: Text(
                 widget.buttonLables[index],
                 textAlign: TextAlign.center,
-                overflow: TextOverflow.ellipsis,
-                maxLines: 1,
                 style: widget.buttonTextStyle.textStyle.copyWith(
                   color: disabled
                       ? widget.buttonTextStyle.disabledColor
