@@ -203,17 +203,19 @@ class CustomRadioButtonState<T> extends State<CustomRadioButton<T>> {
                       borderRadius: BorderRadius.zero,
                     ),
               onPressed: disabled ? null : () => selectButton(e),
-              child: Text(
-                widget.buttonLables[index],
-                textAlign: TextAlign.center,
-                overflow: TextOverflow.visible,
-                softWrap: true,
-                style: widget.buttonTextStyle.textStyle.copyWith(
-                  color: disabled
-                      ? widget.buttonTextStyle.disabledColor
-                      : _currentSelectedValue == e
-                          ? widget.buttonTextStyle.selectedColor
-                          : widget.buttonTextStyle.unSelectedColor,
+              child: Expanded(
+                child: Text(
+                  widget.buttonLables[index],
+                  textAlign: TextAlign.center,
+                  // overflow: TextOverflow.visible,
+                  softWrap: true,
+                  style: widget.buttonTextStyle.textStyle.copyWith(
+                    color: disabled
+                        ? widget.buttonTextStyle.disabledColor
+                        : _currentSelectedValue == e
+                            ? widget.buttonTextStyle.selectedColor
+                            : widget.buttonTextStyle.unSelectedColor,
+                  ),
                 ),
               ),
             ),
@@ -260,17 +262,19 @@ class CustomRadioButtonState<T> extends State<CustomRadioButton<T>> {
                     borderRadius: BorderRadius.zero,
                   ),
             onPressed: disabled ? null : () => selectButton(e),
-            child: Text(
-              widget.buttonLables[index],
-              textAlign: TextAlign.center,
-              overflow: TextOverflow.visible,
-              softWrap: true,
-              style: widget.buttonTextStyle.textStyle.copyWith(
-                color: disabled
-                    ? widget.buttonTextStyle.disabledColor
-                    : _currentSelectedValue == e
-                        ? widget.buttonTextStyle.selectedColor
-                        : widget.buttonTextStyle.unSelectedColor,
+            child: Expanded(
+              child: Text(
+                widget.buttonLables[index],
+                textAlign: TextAlign.center,
+                overflow: TextOverflow.visible,
+                softWrap: true,
+                style: widget.buttonTextStyle.textStyle.copyWith(
+                  color: disabled
+                      ? widget.buttonTextStyle.disabledColor
+                      : _currentSelectedValue == e
+                          ? widget.buttonTextStyle.selectedColor
+                          : widget.buttonTextStyle.unSelectedColor,
+                ),
               ),
             ),
           ),
