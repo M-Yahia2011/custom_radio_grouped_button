@@ -206,7 +206,8 @@ class CustomRadioButtonState<T> extends State<CustomRadioButton<T>> {
               child: Text(
                 widget.buttonLables[index],
                 textAlign: TextAlign.center,
-                 overflow: TextOverflow.visible,
+                overflow: TextOverflow.visible,
+                softWrap: true,
                 style: widget.buttonTextStyle.textStyle.copyWith(
                   color: disabled
                       ? widget.buttonTextStyle.disabledColor
@@ -262,7 +263,8 @@ class CustomRadioButtonState<T> extends State<CustomRadioButton<T>> {
             child: Text(
               widget.buttonLables[index],
               textAlign: TextAlign.center,
-               overflow: TextOverflow.visible,
+              overflow: TextOverflow.visible,
+              softWrap: true,
               style: widget.buttonTextStyle.textStyle.copyWith(
                 color: disabled
                     ? widget.buttonTextStyle.disabledColor
